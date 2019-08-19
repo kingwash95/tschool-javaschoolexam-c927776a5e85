@@ -4,14 +4,14 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class Subsequence {
-    public static  void main (String[] args){
+    public static void main(String[] args) {
         List<Object> X = Arrays.asList("A", "B", "C", "D");
         List<Object> Y = Arrays.asList("BD", "A", "ABC", "B", "M", "D", "M", "C", "DC", "D");
-System.out.println(comparison( X,  Y));
+        System.out.println(comparison(X, Y));
     }
 
 
-    public static boolean comparison (List<Object> X, List<Object> Y) {
+    public static boolean comparison(List<Object> X, List<Object> Y) {
         int XIdx = 0;
         int YIdx = 0;
         while (XIdx < X.size()) {
